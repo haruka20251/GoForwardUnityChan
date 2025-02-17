@@ -18,7 +18,8 @@ public class CubeBGM : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("CubeTag") || CompareTag("GoroundTag"))
+        //collision.gameObject.CompareTag("GroundTag") || CompareTag("CubeTag") ‚¾‚Æ‚Ô‚Â‚©‚Á‚½‘Šè‚ª"GroundTag"‚Ü‚½‚Í©•ª‚ª"CubeTag"‚Ìê‡‚ÌˆÓ–¡‚É‚È‚éithis.CompareTag("CubeTag"))‚ÌˆÓ
+        if (collision.gameObject.CompareTag("CubeTag") || collision.gameObject.CompareTag("GroundTag"))
         {
             audioSource.Play();
             
